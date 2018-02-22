@@ -1,0 +1,16 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Project: ECE506 - HW 1
+// Module Name:Subtractor
+//////////////////////////////////////////////////////////////////////////////////
+module dp_sub(a,b,c);
+parameter datawidth = 8;
+input [datawidth-1:0] a,b;
+output reg [datawidth-1:0] c;
+
+always@(a or b) begin
+	c <= a-b;
+end
+
+
+endmodule
